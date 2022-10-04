@@ -6,7 +6,7 @@ const cacheName = 'cache-members';
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            return cache.addAll(['/members/', '/members/index.html', '/members/nina.png', '/members/morten.png', '/members/olivia.png', 'members/mystyle.css', '/members/members.json', '/members/javascript.js']);
+            return cache.addAll(['/members/', '/members/index.html', '/members/nina.png', '/members/morten.png', '/members/olivia.png', '/members/mystyle.css', '/members/members.json']);
         })
     );
 });
